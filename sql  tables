@@ -1,0 +1,10 @@
+CREATE TABLE EventManagement (
+    EventID INT AUTO_INCREMENT PRIMARY KEY,
+    EventName VARCHAR(255) NOT NULL,
+    EventDate DATE NOT NULL,
+    Location VARCHAR(255) NOT NULL,
+    Description TEXT,
+    OrganizerName VARCHAR(255),
+    OrganizerEmail VARCHAR(255),
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
